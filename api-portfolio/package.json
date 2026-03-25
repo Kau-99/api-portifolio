@@ -1,0 +1,31 @@
+{
+  "name": "api-portfolio-livros",
+  "version": "1.0.0",
+  "description": "API RESTful de gerenciamento de livros desenvolvida com Node.js, Express e SQLite utilizando arquitetura MVC.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "api",
+    "restful",
+    "nodejs",
+    "express",
+    "sqlite",
+    "crud",
+    "backend",
+    "portfolio"
+  ],
+  "author": "Seu Nome Aqui <seuemail@email.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
