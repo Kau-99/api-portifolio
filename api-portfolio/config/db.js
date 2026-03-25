@@ -7,7 +7,6 @@ async function openDb() {
     driver: sqlite3.Database,
   });
 }
-
 async function initDb() {
   const db = await openDb();
   await db.exec(`
@@ -19,7 +18,6 @@ async function initDb() {
         )
     `);
 }
-o;
 initDb();
 
 module.exports = { openDb };
