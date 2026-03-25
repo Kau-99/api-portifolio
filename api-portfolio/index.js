@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-require('./config/db'); // <-- ADICIONE ESTA LINHA AQUI! (Inicia o banco de dados)
+require('./config/db'); 
 const bookRoutes = require('./routes/bookRoutes');
 
 const app = express();

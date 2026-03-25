@@ -1,18 +1,16 @@
-const sqlite3 = require('sqlite3').verbose();
-const { open } = require('sqlite');
+const sqlite3 = require("sqlite3").verbose();
+const { open } = require("sqlite");
 
-// Função para abrir a conexão com o banco de dados
 async function openDb() {
-    return open({
-        filename: './database.db', // O arquivo que será criado na raiz do projeto
-        driver: sqlite3.Database
-    });
+  return open({
+    filename: "./database.db",
+    driver: sqlite3.Database,
+  });
 }
 
-// Função para criar a tabela se ela não existir
 async function initDb() {
-    const db = await openDb();
-    await db.exec(`
+  const db = await openDb();
+  await db.exec(`
         CREATE TABLE IF NOT EXISTS books (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT NOT NULL,
@@ -21,8 +19,7 @@ async function initDb() {
         )
     `);
 }
-
-// Executa a criação da tabela logo que o arquivo for chamado
+o;
 initDb();
 
 module.exports = { openDb };
